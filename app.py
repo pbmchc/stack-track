@@ -10,7 +10,7 @@ CORS(app)
 urls = {
     "questions": "http://stackoverflow.com/questions?page=",
     "jobs": "http://stackoverflow.com/jobs?sort=p&pg=",
-    "jobs_in_poland": "http://stackoverflow.com/jobs?location=poland&range=20&pg="
+    "jobs_in_poland": "http://stackoverflow.com/jobs?l=Polska&d=20&u=Km&sort=p&pg="
 }
 
 
