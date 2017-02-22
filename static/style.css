@@ -1,0 +1,100 @@
+﻿body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+}
+
+h1{
+    color: gray;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h2{
+    font-size:1.2em;
+}
+
+section{
+    width: 31%;
+    position: relative;
+    display:inline-block;
+    margin: 1%;
+    padding:2%;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 1px lightgray;
+    border-radius: 3px;
+}
+
+canvas{
+    display:none;
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+}
+
+.loader{
+    position: relative;
+    bottom: 15px;
+}
+.loader:after{
+    content:'';
+    position:absolute;
+    height:18px;
+    width:18px;
+    border: 2px solid transparent;
+    border-top: 2px solid red;
+    border-bottom: 3px solid red;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%);
+    opacity:.9;
+}
+
+.loader:before{
+    content:'';
+    position:absolute;
+    height:18px;
+    width:18px;
+    border: 2px solid transparent;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    animation: 1.2s rotate infinite;
+    opacity:.7;
+}
+
+@keyframes rotate{
+    from{
+        transform: translate(-50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%) rotate(180deg);
+    }
+}
+
+
+@media(max-width: 980px){
+    section{
+        width:47%;
+    }
+
+    section:last-of-type{
+        display:block;
+        margin:auto;
+    }
+}
+
+@media(max-width: 600px){
+    section{
+        width:90%;
+        padding: 5%;
+        display:block;
+        margin: 0 auto 2% auto;
+    }
+}
